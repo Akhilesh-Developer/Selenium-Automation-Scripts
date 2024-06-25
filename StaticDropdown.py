@@ -13,3 +13,10 @@ dropdown = Select(driver.find_element(By.ID, "exampleFormControlSelect1"))   # N
 dropdown.select_by_visible_text("Female")     # There are a lot of ways to select options in static dropdown
 time.sleep(5)
 driver.close()
+
+#**************************************************************************************************
+
+driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+dropdown_item = Select(driver.find_element(By.ID, "dropdown-class-example"))   
+dropdown_item.select_by_index(3)
+time.sleep(5)
