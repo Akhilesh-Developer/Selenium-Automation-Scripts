@@ -13,3 +13,6 @@ tabs = driver.window_handles   # window_handles is a mehtod which hane a propert
 driver.switch_to.window(tabs[1])    # here we have successfully moved to another window
 new_win_text = driver.find_element(By.TAG_NAME,"h3").text
 print(new_win_text)
+driver.switch_to.window(tabs[0])
+first_window_text = driver.find_element(By.TAG_NAME,"h3").text
+print(first_window_text)
